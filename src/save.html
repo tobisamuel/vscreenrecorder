@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Save Your Recording</title>
+  </head>
+
+  <body>
+    <div class="relative min-h-screen">
+      <nav class="sticky w-full z-50 top-0 left-0 bg-white shadow-md">
+        <div
+          class="flex justify-between max-w-7xl mx-auto items-center w-full h-full px-4 py-3"
+        >
+          <a
+            href="/"
+            class="flex gap-2 justify-center items-center focus:outline-none focus-visible:ring-4 ring-neutral-600 rounded-sm ring-offset-4 hover:opacity-75 transition-opacity"
+          >
+            <img
+              src="./images/logo.svg"
+              alt="HelpMeOut Logo"
+              width="40"
+              height="40"
+              class="object-contain"
+            />
+            <p class="text-2xl font-semibold tracking-wide text-primary-dark">
+              HelpMeOut
+            </p>
+          </a>
+
+          <div class="flex justify-between items-center">
+            <div>
+              <ul
+                class="hidden sm:flex sm:gap-10 text-primary-black font-medium text-base"
+              >
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#howitworks">How It Works</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden sm:flex gap-4 text-lg font-semibold">
+            <a
+              class="px-4 py-2 text-primary-main rounded-full hover:text-primary-light transition-colors"
+              href="/login"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex flex-col items-center w-full h-full">
+        <div class="flex justify-center gap-16 w-full h-full mt-10">
+          <div class="flex flex-col items-start p-10 space-y-14">
+            <h2 class="font-bold text-4xl">Your video is ready!</h2>
+            <div class="w-[500px] flex justify-start items-center gap-2">
+              <div class="w-full flex flex-col gap-1">
+                <label class="text-xs text-primary-black" for="text"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="text"
+                  placeholder="Untitled_Video_20232509 "
+                  class="mt-2 w-full rounded-md bg-white text-[#413C6D] p-4 pt-4 font-semibold text-2xl outline-none"
+                />
+              </div>
+              <img
+                src="./images/edit.svg"
+                alt="transcript"
+                width="32"
+                height="32"
+              />
+            </div>
+
+            <div
+              class="w-[500px] flex justify-between items-center rounded-md bg-[#434343]/20"
+            >
+              <input
+                type="email"
+                id="email"
+                placeholder="enter email of receiver"
+                class="mt-2 w-full rounded-md bg-transparent text-primary-grey p-4 pt-4 font-medium text-base outline-none"
+              />
+              <button class="bg-[#605C84] text-white rounded-lg m-2 p-2">
+                send
+              </button>
+            </div>
+
+            <div class="w-[500px] flex justify-start items-start gap-2">
+              <div class="w-full flex flex-col gap-1">
+                <label
+                  class="text-xl font-semibold text-primary-black"
+                  for="text"
+                  >Video Url</label
+                >
+                <div
+                  class="w-[500px] p-3 flex justify-between items-center border rounded-md border-dotted border-primary-grey"
+                >
+                  <input
+                    type="text"
+                    id="text"
+                    placeholder="https://www.helpmeout/Untitled_Video_20232509"
+                    class="mt-2 w-full rounded-md border-1 border-[#929292] bg-inherit text-primary-grey p-4 pt-4 font-normal text-base outline-none"
+                  />
+                  <div
+                    class="flex justify-between items-center gap-1 rounded-md border-2 border-primary-main px-[18px] py-[10px]"
+                  >
+                    <img
+                      src="./images/copy.svg"
+                      alt="transcript"
+                      width="20"
+                      height="20"
+                    />
+                    <p class="p-1 mr-1">copy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-3">
+              <p>Share your video</p>
+              <div class="flex justify-between gap-4">
+                <div
+                  class="flex gap-2 justify-between items-center rounded-md border-2 border-black p-2"
+                >
+                  <img
+                    src="./images/facebooks.svg"
+                    alt="facebooklogo"
+                    width="24"
+                    height="24"
+                  />
+                  <p>Facebook</p>
+                </div>
+                <div
+                  class="flex gap-2 justify-between items-center rounded-md border-2 border-black p-2"
+                >
+                  <img
+                    src="./images/whatsapp.svg"
+                    alt="whatsapplogo"
+                    width="24"
+                    height="24"
+                  />
+                  <p>Whatsapp</p>
+                </div>
+                <div
+                  class="flex gap-2 justify-between items-center rounded-md border-2 border-black p-2"
+                >
+                  <img
+                    src="./images/telegram.svg"
+                    alt="telegramlogo"
+                    width="24"
+                    height="24"
+                  />
+                  <p>Telegram</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center p-10 space-y-40">
+            <div class="w-[570px] h-[470px]">
+              <video
+                id="recorder-video-player"
+                class="h-full w-full"
+                src=""
+                controls
+              ></video>
+            </div>
+
+            <img
+              src="./images/transcript.svg"
+              alt="transcript"
+              width="570"
+              height="370"
+            />
+          </div>
+        </div>
+        <div class="w-[740px] mx-auto items-center p-10 space-y-10">
+          <p class="font-semibold text-2xl text-primary-black text-center">
+            To ensure the availability and privacy of your video, we recommend
+            saving it to your account.
+          </p>
+          <div class="w-full flex justify-center">
+            <button
+              class="w-[150px] rounded-lg bg-primary-main p-4 font-semibold text-white"
+              type="submit"
+            >
+              Save Video
+            </button>
+          </div>
+          <p class="font-semibold text-2xl text-[#7E7E7E] text-center">
+            Don't have an account?
+            <span class="text-primary-main underline">Create account</span>
+          </p>
+        </div>
+      </div>
+
+      <footer class="text-neutral-800 bg-primary-main">
+        <div
+          class="max-w-7xl flex justify-start items-start gap-40 sm:px-8 px-5 py-24 mx-auto text-white"
+        >
+          <div class="row-span-2 order-last md:order-first">
+            <a
+              href="/"
+              class="flex gap-2 justify-start focus:outline-none focus-visible:ring-4 ring-neutral-600 rounded-sm ring-offset-4 hover:opacity-75 transition-opacity"
+            >
+              <img
+                src="./images/logof.svg"
+                alt="Scissor"
+                width="40"
+                height="40"
+                class="object-contain"
+              />
+              <p class="text-2xl font-semibold tracking-wide">HelpMeOut</p>
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-5 text-sm lg:text-base">
+            <h4 class="font-semibold">Menu</h4>
+            <a class="font-normal hover:opacity-75" href="#">Home</a>
+            <a class="font-normal hover:opacity-75" href="#">Converter</a>
+            <a class="font-normal hover:opacity-75" href="#howitworks"
+              >How it Works</a
+            >
+          </div>
+
+          <div class="flex flex-col gap-5 text-sm lg:text-base">
+            <h4 class="font-semibold">About us</h4>
+            <a class="font-normal hover:opacity-75" href="#">About</a>
+            <a class="font-normal hover:opacity-75" href="#">Contact US</a>
+            <a class="font-normal hover:opacity-75" href="#">Privacy Policy</a>
+          </div>
+
+          <div class="flex flex-col gap-5 text-sm lg:text-base">
+            <h4 class="font-semibold">Screen Record</h4>
+            <a class="font-normal hover:opacity-75" href="#">Browser Window</a>
+            <a class="font-normal hover:opacity-75" href="#">Desktop</a>
+            <a class="font-normal hover:opacity-75" href="#">Application</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/save.js"></script>
+  </body>
+</html>

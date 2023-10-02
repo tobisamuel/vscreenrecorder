@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Degraphe Video Recorder</title>
+  </head>
+
+  <body>
+    <div class="w-80 p-6">
+      <div class="flex gap-2 items-center">
+        <img src="./images/logo.png" class="h-7 w-7" alt="logo" />
+        <h1 class="font-bold text-[#120B48]">HelpMeOut</h1>
+      </div>
+
+      <div>
+        <p class="mt-4 text-sm">
+          This extension helps you record and share help videos with ease.
+        </p>
+      </div>
+
+      <div class="space-y-6 mt-6">
+        <div
+          class="p-3 border border-[#100A42] rounded-xl flex justify-between items-center w-full"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.75 6.5L19.4697 1.78033C19.9421 1.30786 20.75 1.64248 20.75 2.31066V13.6893C20.75 14.3575 19.9421 14.6921 19.4697 14.2197L14.75 9.5M3.5 14.75H12.5C13.7426 14.75 14.75 13.7426 14.75 12.5V3.5C14.75 2.25736 13.7426 1.25 12.5 1.25H3.5C2.25736 1.25 1.25 2.25736 1.25 3.5V12.5C1.25 13.7426 2.25736 14.75 3.5 14.75Z"
+                stroke="#0F172A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+
+            <span class="font-medium">Camera</span>
+          </div>
+
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              id="videoSwitch"
+              value=""
+              class="sr-only peer"
+            />
+            <div
+              class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-[#100A42] dark:peer-focus:ring-[#100A42] dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#100A42]"
+            ></div>
+          </label>
+        </div>
+
+        <div
+          class="p-3 border border-[#100A42] rounded-xl flex items-center justify-between w-full"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 18.75C15.3137 18.75 18 16.0637 18 12.75V11.25M12 18.75C8.68629 18.75 6 16.0637 6 12.75V11.25M12 18.75V22.5M8.25 22.5H15.75M12 15.75C10.3431 15.75 9 14.4069 9 12.75V4.5C9 2.84315 10.3431 1.5 12 1.5C13.6569 1.5 15 2.84315 15 4.5V12.75C15 14.4069 13.6569 15.75 12 15.75Z"
+                stroke="#0F172A"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+
+            <span class="font-medium">Audio</span>
+          </div>
+
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              id="audioSwitch"
+              value=""
+              class="sr-only peer"
+            />
+            <div
+              class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-[#100A42] dark:peer-focus:ring-[#100A42] dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#100A42]"
+            ></div>
+          </label>
+        </div>
+
+        <button
+          type="button"
+          class="bg-[#100A42] font-medium py-4 w-full rounded-xl text-white"
+          id="recordButton"
+        >
+          Start Recording
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
